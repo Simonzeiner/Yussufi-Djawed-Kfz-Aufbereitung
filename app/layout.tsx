@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://menk-harald-autoreparatur.f2hczvhjwm.chatgpt.site"),
   title: {
     default: "Menk Harald Autoreparatur Mainz",
     template: "%s | Menk Harald Autoreparatur Mainz",
