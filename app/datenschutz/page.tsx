@@ -30,7 +30,11 @@ export default function Datenschutz() {
           <p>
             Menk Harald Autoreparatur
             <br />
-            <span className="placeholder">Adresse ergaenzen</span>
+            Max-Hufschmidt-Str. 2
+            <br />
+            55130 Mainz
+            <br />
+            Telefon: <a href="tel:+49613185697">06131 8 56 97</a>
             <br />
             <span className="placeholder">E-Mail-Adresse ergaenzen</span>
           </p>

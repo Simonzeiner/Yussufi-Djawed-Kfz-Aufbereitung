@@ -345,6 +345,13 @@ h3 {
   margin-bottom: clamp(30px, 5vw, 58px);
 }
 
+.section-subcopy {
+  max-width: 760px;
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.6vw, 1.16rem);
+}
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -436,6 +443,47 @@ h3 {
   object-fit: cover;
 }
 
+.reviews {
+  background:
+    linear-gradient(135deg, rgb(215 25 32 / 7%), transparent 34%),
+    white;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  min-height: 220px;
+  margin: 0;
+  padding: clamp(24px, 4vw, 34px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: 0 12px 34px rgb(23 26 31 / 7%);
+}
+
+.review-card blockquote {
+  margin: 0 0 38px;
+  color: var(--ink);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  font-weight: 900;
+  line-height: 1.04;
+}
+
+.review-card figcaption,
+.source-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.source-note {
+  max-width: 760px;
+  margin: 24px 0 0;
+}
+
 .process {
   background: var(--soft);
 }
@@ -523,6 +571,35 @@ dd {
   margin: 2px 0 0;
   overflow-wrap: anywhere;
   font-weight: 850;
+}
+
+.hours-list {
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.hours-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hours-list span {
+  color: var(--muted);
+}
+
+.hours-list strong {
+  text-align: right;
 }
 
 .site-footer {
@@ -633,6 +710,7 @@ dd {
 
   .trust-strip,
   .service-grid,
+  .review-grid,
   .timeline {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -700,6 +778,7 @@ dd {
 
   .trust-strip,
   .service-grid,
+  .review-grid,
   .timeline {
     grid-template-columns: 1fr;
   }

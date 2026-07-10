@@ -20,22 +20,22 @@ export default function Impressum() {
           <h1>Impressum</h1>
           <p>
             Diese Seite ist als rechtssichere Struktur vorbereitet. Die
-            konkreten Pflichtangaben muessen vor Veroeffentlichung mit den
-            tatsaechlichen Unternehmensdaten ersetzt und geprueft werden.
+            bekannten Unternehmensdaten sind eingetragen. Fehlende Pflichtangaben
+            muessen vor Veroeffentlichung noch ergaenzt und geprueft werden.
           </p>
 
           <h2>Anbieter</h2>
           <p>
             <strong>Menk Harald Autoreparatur</strong>
             <br />
-            <span className="placeholder">Strasse und Hausnummer ergaenzen</span>
+            Max-Hufschmidt-Str. 2
             <br />
-            <span className="placeholder">PLZ und Ort ergaenzen</span>
+            55130 Mainz
           </p>
 
           <h2>Kontakt</h2>
           <p>
-            Telefon: <span className="placeholder">Telefonnummer ergaenzen</span>
+            Telefon: <a href="tel:+49613185697">06131 8 56 97</a>
             <br />
             E-Mail: <span className="placeholder">E-Mail-Adresse ergaenzen</span>
           </p>

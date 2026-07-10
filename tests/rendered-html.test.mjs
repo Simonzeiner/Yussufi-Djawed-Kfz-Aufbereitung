@@ -32,8 +32,10 @@ test("renders the redesigned workshop homepage", async () => {
   assert.match(html, /Autoreparatur mit Ruhe, Praezision und klarer Ansage/);
   assert.match(html, /Inspektion &amp; Wartung/);
   assert.match(html, /Fehlerdiagnose/);
-  assert.match(html, /Keine Tracking-Cookies/);
-  assert.match(html, /Telefonnummer ergaenzen/);
+  assert.match(html, /Max-Hufschmidt-Str\. 2/);
+  assert.match(html, /06131 8 56 97/);
+  assert.match(html, /07:30 - 17:30 Uhr/);
+  assert.match(html, /erfahrener und kompetenter Kfz-Meister/);
   assert.match(html, /application\/ld\+json/);
 });
 
@@ -50,7 +52,9 @@ test("renders legal pages with visible placeholders", async () => {
   const datenschutzHtml = await datenschutz.text();
 
   assert.match(impressumHtml, /Impressum/);
-  assert.match(impressumHtml, /Strasse und Hausnummer ergaenzen/);
+  assert.match(impressumHtml, /Max-Hufschmidt-Str\. 2/);
+  assert.match(impressumHtml, /E-Mail-Adresse ergaenzen/);
   assert.match(datenschutzHtml, /Datenschutz/);
+  assert.match(datenschutzHtml, /06131 8 56 97/);
   assert.match(datenschutzHtml, /keine Analyse-Skripte/);
 });
