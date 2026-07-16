@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Datenschutz",
   description:
-    "Datenschutzhinweise fuer Menk Harald Autoreparatur Mainz.",
+    "Datenschutzhinweise für Djawed Yussufi Reifenservice und Kfz-Aufbereitung in Mainz.",
   robots: {
     index: false,
     follow: true,
@@ -19,65 +19,58 @@ export default function Datenschutz() {
           <p className="section-label">Rechtliches</p>
           <h1>Datenschutz</h1>
           <p>
-            Diese Vorschau ist datensparsam umgesetzt: keine Analyse-Skripte,
+            Diese Website ist datensparsam umgesetzt: keine Analyse-Skripte,
             keine Marketing-Cookies, keine externen Webfonts und keine
-            eingebetteten Drittanbieter-Karten. Die finalen Angaben muessen vor
-            Livegang auf Hosting, Kontaktwege und reale Prozesse abgestimmt
-            werden.
+            eingebettete Drittanbieter-Karte.
           </p>
-
           <h2>Verantwortliche Stelle</h2>
           <p>
-            Menk Harald Autoreparatur
+            Djawed Yussufi Reifenservice und Kfz-Aufbereitung
             <br />
-            Max-Hufschmidt-Str. 2
+            Weisenauer Weg 4-6
             <br />
-            55130 Mainz
+            55129 Mainz
             <br />
-            Telefon: <a href="tel:+49613185697">06131 8 56 97</a>
+            Deutschland
             <br />
-            <span className="placeholder">E-Mail-Adresse ergaenzen</span>
+            Telefon: <a href="tel:+4961315565234">06131 5565234</a>
+            <br />
+            E-Mail:{" "}
+            <a href="mailto:kontakt@mainzer-autoteile-discount.de">
+              kontakt@mainzer-autoteile-discount.de
+            </a>
           </p>
-
           <h2>Hosting und Server-Logfiles</h2>
           <p>
-            Beim Aufruf der Website koennen technisch erforderliche Zugriffsdaten
+            Beim Aufruf der Website können technisch erforderliche Zugriffsdaten
             verarbeitet werden, etwa IP-Adresse, Datum, Uhrzeit, angeforderte
             Datei, Browserinformationen und Referrer. Diese Verarbeitung dient
             dem sicheren und stabilen Betrieb der Website.
           </p>
-
           <h2>Kontaktaufnahme</h2>
           <p>
-            Wenn Besucher per Telefon oder E-Mail Kontakt aufnehmen, werden die
-            uebermittelten Daten zur Bearbeitung der Anfrage verarbeitet. Welche
-            Daten konkret anfallen, haengt vom gewaehlten Kontaktweg und vom
-            Inhalt der Anfrage ab.
+            Wenn Besucher per Telefon, E-Mail, WhatsApp oder Instagram Kontakt
+            aufnehmen, werden die übermittelten Daten zur Bearbeitung der Anfrage
+            verarbeitet. Welche Daten konkret anfallen, hängt vom gewählten
+            Kontaktweg und vom Inhalt der Anfrage ab.
           </p>
-
-          <h2>Cookies und Tracking</h2>
+          <h2>Externe Links, WhatsApp, Instagram und Karten</h2>
           <p>
-            Diese Website setzt in der aktuellen Umsetzung keine
-            einwilligungspflichtigen Marketing- oder Analyse-Cookies ein. Sollte
-            spaeter ein Buchungstool, eine Karte, ein Chat, Analytics oder
-            Werbung eingebunden werden, muss diese Datenschutzerklaerung
-            entsprechend erweitert und gegebenenfalls ein Consent-Mechanismus
-            integriert werden.
+            Links zu Instagram, WhatsApp und Kartenanbietern werden erst geöffnet,
+            wenn Besucher sie aktiv anklicken. Ab diesem Zeitpunkt gelten die
+            Datenschutzbedingungen des jeweiligen Anbieters.
           </p>
-
           <h2>Rechte betroffener Personen</h2>
           <p>
-            Betroffene Personen koennen je nach Voraussetzung Auskunft,
-            Berichtigung, Loeschung, Einschraenkung der Verarbeitung,
-            Datenuebertragbarkeit und Widerspruch verlangen. Zudem besteht ein
-            Beschwerderecht bei einer Datenschutzaufsichtsbehoerde.
+            Betroffene Personen können je nach Voraussetzung Auskunft,
+            Berichtigung, Löschung, Einschränkung der Verarbeitung,
+            Datenübertragbarkeit und Widerspruch verlangen. Zudem besteht ein
+            Beschwerderecht bei einer Datenschutzaufsichtsbehörde.
           </p>
-
           <h2>Stand</h2>
-          <p>Juli 2026. Final vor Veroeffentlichung juristisch pruefen.</p>
-
+          <p>Juli 2026.</p>
           <p>
-            <Link href="/">Zurueck zur Startseite</Link>
+            <Link href="/">Zurück zur Startseite</Link>
           </p>
         </article>
       </div>

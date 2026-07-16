@@ -4,126 +4,59 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Menk Harald Autoreparatur Mainz | Freie Kfz-Werkstatt",
+    absolute:
+      "Djawed Yussufi Reifenservice und Kfz-Aufbereitung Mainz | Mainzer Autoteile Discount",
   },
   description:
-    "Menk Harald Autoreparatur in Mainz, Max-Hufschmidt-Str. 2: Reparatur, Wartung, Diagnose, Karosseriebau und transparente Werkstattkommunikation.",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "Menk Harald Autoreparatur Mainz",
-    description:
-      "Freie Kfz-Werkstatt in Mainz fuer Diagnose, Wartung, Reparatur, Bremsen, Reifenservice und Karosseriebau.",
-    images: ["/images/werkstatt-hero.png"],
-  },
+    "Reifenservice, Autoteile, Felgen, Werkstatt, Fahrzeugaufbereitung, Smart Repair und TÜV-Vorbereitung in Mainz.",
 };
 
+const phoneDisplay = "06131 5565234";
+const phoneHref = "tel:+4961315565234";
+const email = "kontakt@mainzer-autoteile-discount.de";
+const address = "Weisenauer Weg 4-6, 55129 Mainz";
+const routeUrl = "https://maps.apple.com/?address=Mainzer+Autoteile+Discount";
+
 const services = [
-  {
-    eyebrow: "01",
-    title: "Inspektion & Wartung",
-    text: "Planbare Services nach Herstellervorgaben, klare Rueckmeldung und saubere Dokumentation.",
-  },
-  {
-    eyebrow: "02",
-    title: "Fehlerdiagnose",
-    text: "Strukturierte Suche statt Teiletausch auf Verdacht: auslesen, pruefen, erklaeren, beheben.",
-  },
-  {
-    eyebrow: "03",
-    title: "Bremsen & Fahrwerk",
-    text: "Praezise Arbeit an sicherheitsrelevanten Komponenten mit Blick auf Komfort und Haltbarkeit.",
-  },
-  {
-    eyebrow: "04",
-    title: "Reifen & Raeder",
-    text: "Wechsel, Sichtpruefung, Profilcheck und Beratung fuer die passende Saisonloesung.",
-  },
-  {
-    eyebrow: "05",
-    title: "Oel, Filter & Verschleissteile",
-    text: "Routinen, die den Wagen verlaesslich halten: fachgerecht, nachvollziehbar und terminsicher.",
-  },
-  {
-    eyebrow: "06",
-    title: "HU/AU Vorbereitung",
-    text: "Vorabcheck und Maengelbearbeitung, damit die Pruefung ohne unnoetige Ueberraschungen laeuft.",
-  },
+  ["Teilehandel", "Kfz-Ersatzteile, Öl, Filter, Karosserieteile, Zubehör und Beratung für nahezu jede Automarke."],
+  ["Reifenservice", "Reifenverkauf, Montage, Wechsel, Auswuchten und saisonale Einlagerung mit kurzer Abstimmung."],
+  ["Felgenverkauf", "Felgen in passenden Größen, Designs und Ausführungen inklusive Zubehörberatung vor Ort."],
+  ["Werkstatt", "Wartung, Reparatur, Fehlerdiagnose und technische Checks für ein verlässliches Fahrzeug."],
+  ["Fahrzeugaufbereitung", "Innenpflege, Außenreinigung, Politur und Lackaufbereitung für spürbar mehr Wertigkeit."],
+  ["Smart Repair", "Kleine Kratzer, Dellen und optische Schäden präzise, schnell und wirtschaftlich beheben lassen."],
 ];
 
-const proofPoints = [
-  "Kfz-Meister mit langjaehriger Erfahrung",
-  "Max-Hufschmidt-Str. 2 in 55130 Mainz",
-  "8 Bewertungen bei Das Oertliche, golocal und 11880",
-  "Mo-Do 07:30-17:30 Uhr, Fr bis 15:00 Uhr",
-];
-
-const faqs = [
-  {
-    q: "Kann ich direkt online einen Termin buchen?",
-    a: "Aktuell fuehrt die Website direkt zur telefonischen Anfrage unter 06131 8 56 97. Ein Online-Buchungstool kann spaeter ergaenzt werden.",
-  },
-  {
-    q: "Wann ist die Werkstatt geoeffnet?",
-    a: "Montag bis Donnerstag von 07:30 bis 17:30 Uhr, Freitag von 07:30 bis 15:00 Uhr und Samstag von 10:00 bis 12:00 Uhr.",
-  },
-  {
-    q: "Wo befindet sich Menk Harald Autoreparatur?",
-    a: "Die Werkstatt befindet sich in der Max-Hufschmidt-Str. 2, 55130 Mainz.",
-  },
-];
-
-const openingHours = [
-  ["Montag", "07:30 - 17:30 Uhr"],
-  ["Dienstag", "07:30 - 17:30 Uhr"],
-  ["Mittwoch", "07:30 - 17:30 Uhr"],
-  ["Donnerstag", "07:30 - 17:30 Uhr"],
-  ["Freitag", "07:30 - 15:00 Uhr"],
-  ["Samstag", "10:00 - 12:00 Uhr"],
-];
-
-const reviews = [
-  {
-    source: "golocal",
-    date: "13.11.2019",
-    author: "fridolin56",
-    quote: "erfahrener und kompetenter Kfz-Meister",
-  },
-  {
-    source: "golocal",
-    date: "08.11.2016",
-    author: "mariamaral_",
-    quote: "Sehr zufrieden",
-  },
-  {
-    source: "golocal",
-    date: "16.07.2013",
-    author: "barbara.zett",
-    quote: "prompt und preiswert",
-  },
+const hours = [
+  ["Montag", "09:00 - 18:00 Uhr"],
+  ["Dienstag", "09:00 - 18:00 Uhr"],
+  ["Mittwoch", "09:00 - 18:00 Uhr"],
+  ["Donnerstag", "09:00 - 18:00 Uhr"],
+  ["Freitag", "09:00 - 18:00 Uhr"],
+  ["Samstag", "09:00 - 17:00 Uhr"],
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
-  name: "Menk Harald Autoreparatur",
+  name: "Djawed Yussufi Reifenservice und Kfz-Aufbereitung",
+  alternateName: "Mainzer Autoteile Discount",
+  telephone: "+4961315565234",
+  email,
+  image: "/images/mainzer/hero-tire-service.jpg",
+  logo: "/images/mainzer/logo.jpg",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Max-Hufschmidt-Str. 2",
-    postalCode: "55130",
+    streetAddress: "Weisenauer Weg 4-6",
+    postalCode: "55129",
     addressLocality: "Mainz",
     addressCountry: "DE",
   },
-  telephone: "+49 6131 85697",
-  areaServed: "Mainz",
-  openingHours: [
-    "Mo-Th 07:30-17:30",
-    "Fr 07:30-15:00",
-    "Sa 10:00-12:00",
-  ],
-  image: "/images/werkstatt-hero.png",
-  url: "https://menk-harald-autoreparatur.f2hczvhjwm.chatgpt.site",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    reviewCount: "218",
+  },
+  sameAs: ["https://www.instagram.com/mainzer.autoteile.discount/"],
 };
 
 export default function Home() {
@@ -133,243 +66,179 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <header className="site-header">
+      <header className="site-header" aria-label="Hauptnavigation">
         <Link className="brand" href="/" aria-label="Startseite">
-          <span className="brand-mark" aria-hidden="true">
-            MH
-          </span>
-          <span>
-            <strong>Menk Harald</strong>
-            <small>Autoreparatur Mainz</small>
+          <Image src="/images/mainzer/logo.jpg" alt="Mainzer Autoteile Discount" width={146} height={60} priority />
+          <span className="brand-copy">
+            <strong>Djawed Yussufi</strong>
+            <small>Reifenservice und Kfz-Aufbereitung</small>
           </span>
         </Link>
-        <nav className="main-nav" aria-label="Hauptnavigation">
+        <nav className="main-nav" aria-label="Seitennavigation">
           <a href="#leistungen">Leistungen</a>
-          <a href="#werkstatt">Werkstatt</a>
-          <a href="#bewertungen">Bewertungen</a>
-          <a href="#ablauf">Ablauf</a>
+          <a href="#aufbereitung">Aufbereitung</a>
+          <a href="#bewertungen">Vertrauen</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
-        <a className="nav-cta" href="tel:+49613185697">
-          06131 8 56 97
-        </a>
+        <a className="nav-cta" href={phoneHref}>Jetzt anrufen</a>
       </header>
 
       <main>
-        <section className="hero" aria-labelledby="hero-title">
+        <section className="hero">
           <Image
-            src="/images/werkstatt-hero.png"
-            alt="Helle moderne Autowerkstatt mit Fahrzeugdiagnose"
+            src="/images/mainzer/hero-tire-service.jpg"
+            alt="Professioneller Reifenservice in einer Kfz-Werkstatt"
             fill
-            priority
             sizes="100vw"
+            priority
             className="hero-image"
           />
           <div className="hero-overlay" />
           <div className="hero-content">
-            <p className="kicker">Freie Kfz-Werkstatt in Mainz</p>
-            <h1 id="hero-title">Autoreparatur mit Ruhe, Praezision und klarer Ansage.</h1>
+            <p className="kicker">Reifenservice · Autoteile · Kfz-Aufbereitung in Mainz</p>
+            <h1>Djawed Yussufi Reifenservice und Kfz-Aufbereitung</h1>
             <p className="hero-copy">
-              Menk Harald Autoreparatur in der Max-Hufschmidt-Str. 2:
-              erfahrene Meisterarbeit, unkomplizierte Reparaturen und ein
-              Preis-Leistungs-Verhaeltnis, das Kundinnen und Kunden seit Jahren
-              schaetzen.
+              Mainzer Autoteile Discount verbindet günstige Teile, starken Reifenservice,
+              Felgen, Werkstatt und Fahrzeugpflege zu einem klaren Anlaufpunkt am Weisenauer Weg.
             </p>
-            <div className="hero-actions" aria-label="Schnellaktionen">
-              <a className="button button-primary" href="tel:+49613185697">
-                Jetzt anrufen
-              </a>
-              <a className="button button-secondary" href="#leistungen">
-                Leistungen ansehen
-              </a>
+            <div className="hero-actions" aria-label="Schnellkontakt">
+              <a className="button button-primary" href={phoneHref}>Jetzt anrufen</a>
+              <a className="button button-secondary" href="#leistungen">Leistungen ansehen</a>
             </div>
           </div>
-          <aside className="hero-panel" aria-label="Wichtige Hinweise">
-            <span>Standort</span>
-            <strong>55130 Mainz</strong>
-            <p>Max-Hufschmidt-Str. 2 · Telefon 06131 8 56 97</p>
+          <aside className="status-panel" aria-label="Kontaktübersicht">
+            <span>Google-Bewertung</span>
+            <strong>4,8 / 5</strong>
+            <p>Basierend auf 218 Bewertungen · {address}</p>
           </aside>
         </section>
 
-        <section className="trust-strip" aria-label="Vertrauensmerkmale">
-          {proofPoints.map((point) => (
-            <p key={point}>{point}</p>
-          ))}
+        <section className="trust-strip" aria-label="Vorteile">
+          <p>4,8 Sterne auf Basis von 218 Google-Bewertungen</p>
+          <p>Autoteile, Reifenservice und Aufbereitung an einem Standort</p>
+          <p>Mo. bis Fr. 09:00-18:00 Uhr, Sa. 09:00-17:00 Uhr</p>
+          <p>Weisenauer Weg 4-6 in 55129 Mainz</p>
         </section>
 
-        <section className="section intro" id="werkstatt">
+        <section className="section intro" id="vertrauen">
           <div>
-            <p className="section-label">Profil</p>
-            <h2>Eine Werkstattseite, die Kompetenz zeigt, ohne laut zu werden.</h2>
+            <p className="section-label">Mainz, Weisenauer Weg 4-6</p>
+            <h2>Ein moderner Auftritt für einen lokalen Betrieb, der mehr kann als nur ein einzelnes Gewerk.</h2>
           </div>
-          <p>
-            Besucher sollen sofort verstehen, wofuer die Werkstatt steht:
-            ein erfahrener Kfz-Meister, schnelle und unkomplizierte Reparaturen,
-            nachvollziehbare Empfehlungen und ein lokaler Ansprechpartner in
-            Mainz.
-          </p>
-        </section>
-
-        <section className="section services" id="leistungen" aria-labelledby="services-title">
-          <div className="section-heading">
-            <p className="section-label">Leistungen</p>
-            <h2 id="services-title">Alles Wichtige fuer Alltag, Sicherheit und Werterhalt.</h2>
-            <p className="section-subcopy">
-              Schwerpunkt laut Branchenverzeichnis: Karosseriebau in Mainz.
-              Dazu passend fuehrt die Website Wartung, Diagnose und klassische
-              Autoreparatur klar zusammen.
+          <div className="intro-copy">
+            <p>
+              Ersatzteil gesucht, Reifen montieren, Felgen auswählen, Fahrzeug aufbereiten
+              oder Werkstatttermin abstimmen: alles ist direkt erreichbar und klar sortiert.
+            </p>
+            <p>
+              Die Website ist datensparsam umgesetzt: keine Analyse-Skripte,
+              keine externen Webfonts und keine eingebettete Karte.
             </p>
           </div>
+        </section>
+
+        <section className="section services" id="leistungen">
+          <div className="section-heading">
+            <p className="section-label">Leistungen</p>
+            <h2>Alles Wesentliche fürs Auto, sauber gebündelt.</h2>
+          </div>
           <div className="service-grid">
-            {services.map((service) => (
-              <article className="service-card" key={service.title}>
-                <span>{service.eyebrow}</span>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
+            {services.map(([title, text], index) => (
+              <article className="service-card" key={title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <h3>{title}</h3>
+                <p>{text}</p>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="section reviews" id="bewertungen" aria-labelledby="reviews-title">
-          <div className="section-heading">
-            <p className="section-label">Bewertungen</p>
-            <h2 id="reviews-title">Vertrauen, das ueber Jahre gewachsen ist.</h2>
-            <p className="section-subcopy">
-              Nach deinen Angaben werden bei Das Oertliche insgesamt 8
-              Bewertungen aus golocal und 11880 ausgewiesen. Aus rechtlichen
-              Gruenden zeigen wir nur kurze Auszuege mit klarer Quellenangabe.
-            </p>
-          </div>
-          <div className="review-grid">
-            {reviews.map((review) => (
-              <figure className="review-card" key={`${review.author}-${review.date}`}>
-                <blockquote>„{review.quote}”</blockquote>
-                <figcaption>
-                  {review.author} · {review.date} · via {review.source}
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-          <p className="source-note">
-            Quelle: kopierte Angaben aus Das Oertliche mit Verweisen auf golocal
-            und 11880. Vor dauerhaftem Livegang bitte Bewertungsnutzung und
-            Aktualitaet nochmals pruefen.
-          </p>
-        </section>
-
-        <section className="feature-band">
+        <section className="feature-band" id="aufbereitung">
           <div className="feature-copy">
-            <p className="section-label">Arbeitsweise</p>
-            <h2>Erst verstehen. Dann reparieren.</h2>
+            <p className="section-label">Fahrzeugaufbereitung</p>
+            <h2>Mehr Glanz, mehr Werterhalt, mehr Freude am eigenen Fahrzeug.</h2>
             <p>
-              Moderne Fahrzeugtechnik braucht eine Website, die den gleichen
-              Anspruch vermittelt: Diagnose mit System, transparente Empfehlung
-              und klare naechste Schritte fuer Kundinnen und Kunden.
+              Innenraumpflege, Außenreinigung, Politur und Lackaufbereitung werden
+              als hochwertige Servicewelt präsentiert und direkt anfragbar gemacht.
             </p>
-            <ul className="check-list">
-              <li>Klare Anfragefuehrung statt verstreuter Kontaktinfos</li>
-              <li>Verstaendliche Leistungsbereiche fuer schnelle Orientierung</li>
-              <li>Trust-Signale ohne unbewiesene Superlative</li>
-            </ul>
+            <div className="step-list">
+              <article><span>01</span><div><h3>Anliegen klären</h3><p>Kurz schildern, welche Teile, Reifen oder Pflegeleistung benötigt werden.</p></div></article>
+              <article><span>02</span><div><h3>Passende Lösung finden</h3><p>Serviceumfang, Verfügbarkeit und nächster Schritt werden verständlich abgestimmt.</p></div></article>
+              <article><span>03</span><div><h3>Sauber erledigen</h3><p>Montage, Werkstattarbeit oder Aufbereitung erfolgen mit Fokus auf Ergebnis.</p></div></article>
+            </div>
           </div>
           <div className="feature-media">
-            <Image
-              src="/images/service-bremsen-diagnose.png"
-              alt="Bremsanlage, Werkzeug und Diagnoseumgebung in einer modernen Werkstatt"
-              fill
-              sizes="(max-width: 900px) 100vw, 45vw"
-            />
+            <Image src="/images/mainzer/paint-detailing.jpg" alt="Professionelle Lackaufbereitung an einem Fahrzeug" fill sizes="(max-width: 980px) 100vw, 48vw" />
           </div>
         </section>
 
-        <section className="section process" id="ablauf" aria-labelledby="process-title">
+        <section className="section reviews" id="bewertungen">
           <div className="section-heading">
-            <p className="section-label">Ablauf</p>
-            <h2 id="process-title">Vom Problem zur Loesung in drei klaren Schritten.</h2>
+            <p className="section-label">Vertrauen</p>
+            <h2>Starke lokale Reputation sichtbar gemacht.</h2>
           </div>
-          <div className="timeline">
-            <article>
-              <span>1</span>
-              <h3>Anfragen</h3>
-              <p>Fahrzeugdaten, Anliegen und Wunschzeit mitteilen.</p>
-            </article>
-            <article>
-              <span>2</span>
-              <h3>Pruefen</h3>
-              <p>Werkstatt prueft Ursache, Aufwand und sinnvolle Optionen.</p>
-            </article>
-            <article>
-              <span>3</span>
-              <h3>Freigeben</h3>
-              <p>Reparatur startet erst nach Ruecksprache und klarer Empfehlung.</p>
-            </article>
+          <div className="review-grid">
+            <figure className="review-card"><blockquote>“4,8 von 5 Sternen”</blockquote><figcaption><strong>Google-Bewertung</strong><span>Basierend auf 218 Bewertungen</span></figcaption></figure>
+            <figure className="review-card"><blockquote>“Alles rund ums Auto”</blockquote><figcaption><strong>Leistungen</strong><span>Teile, Reifen, Felgen, Werkstatt und Aufbereitung</span></figcaption></figure>
+            <figure className="review-card"><blockquote>“Direkt in Mainz”</blockquote><figcaption><strong>Standort</strong><span>Weisenauer Weg 4-6</span></figcaption></figure>
           </div>
         </section>
 
-        <section className="section faq" aria-labelledby="faq-title">
+        <section className="section faq" id="fragen">
           <div className="section-heading">
-            <p className="section-label">Fragen</p>
-            <h2 id="faq-title">Was Besucher vor dem ersten Kontakt wissen wollen.</h2>
+            <p className="section-label">Häufige Fragen</p>
+            <h2>Schnelle Orientierung vor dem ersten Kontakt.</h2>
           </div>
           <div className="faq-list">
-            {faqs.map((item) => (
-              <details key={item.q}>
-                <summary>{item.q}</summary>
-                <p>{item.a}</p>
-              </details>
-            ))}
+            <details><summary>Kann ich direkt für Reifenservice oder Aufbereitung anfragen?</summary><p>Ja. Am schnellsten geht es telefonisch unter 06131 5565234 oder über WhatsApp.</p></details>
+            <details><summary>Werden auch Autoteile für unterschiedliche Marken angeboten?</summary><p>Ja. Der Schwerpunkt liegt auf Ersatzteilen, Reifen, Felgen, Öl, Karosserie- und Zubehörteilen für viele Marken.</p></details>
+            <details><summary>Gibt es Tracking auf dieser Website?</summary><p>Nein. Die Website nutzt keine Analyse-Skripte und keine eingebetteten Karten.</p></details>
           </div>
         </section>
 
-        <section className="contact-band" id="kontakt" aria-labelledby="contact-title">
-          <div>
+        <section className="contact-band" id="kontakt">
+          <div className="contact-copy">
             <p className="section-label">Kontakt</p>
-            <h2 id="contact-title">Direkt zur Werkstatt in Mainz.</h2>
-            <p>
-              Am schnellsten klappt die Terminabsprache telefonisch. Die
-              Oeffnungszeiten stammen aus den von dir kopierten Angaben von Das
-              Oertliche / golocal.
-            </p>
+            <h2>Direkt zum Team am Weisenauer Weg.</h2>
+            <p>Für Teileanfragen, Reifenservice, Werkstatttermine oder Aufbereitung: kurz melden und Fahrzeugdaten bereithalten.</p>
+            <div className="contact-actions">
+              <a className="button button-primary" href={phoneHref}>{phoneDisplay}</a>
+              <a className="button button-light" href={`mailto:${email}`}>E-Mail</a>
+              <a className="button button-light" href={routeUrl}>Anfahrt öffnen</a>
+            </div>
           </div>
-          <div className="contact-card">
+          <aside className="contact-card" aria-label="Adresse und Öffnungszeiten">
             <dl>
+              <div><dt>Unternehmen</dt><dd>Djawed Yussufi Reifenservice und Kfz-Aufbereitung</dd></div>
+              <div><dt>Adresse</dt><dd>{address}</dd></div>
+              <div><dt>Telefon</dt><dd><a href={phoneHref}>{phoneDisplay}</a></dd></div>
+              <div><dt>E-Mail</dt><dd><a href={`mailto:${email}`}>{email}</a></dd></div>
+              <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/mainzer.autoteile.discount/" target="_blank" rel="noreferrer">@mainzer.autoteile.discount</a></dd></div>
               <div>
-                <dt>Telefon</dt>
-                <dd><a href="tel:+49613185697">06131 8 56 97</a></dd>
-              </div>
-              <div>
-                <dt>Adresse</dt>
-                <dd>Max-Hufschmidt-Str. 2<br />55130 Mainz</dd>
-              </div>
-              <div>
-                <dt>Oeffnungszeiten</dt>
+                <dt>Öffnungszeiten</dt>
                 <dd>
-                  <ol className="hours-list" aria-label="Oeffnungszeiten">
-                    {openingHours.map(([day, hours]) => (
-                      <li key={day}>
-                        <span>{day}</span>
-                        <strong>{hours}</strong>
-                      </li>
-                    ))}
-                  </ol>
+                  <ul className="hours-list">
+                    {hours.map(([day, time]) => <li key={day}><span>{day}</span><strong>{time}</strong></li>)}
+                  </ul>
                 </dd>
               </div>
             </dl>
-            <a className="button button-primary full" href="tel:+49613185697">
-              Jetzt anrufen
-            </a>
-          </div>
+          </aside>
         </section>
       </main>
 
       <footer className="site-footer">
-        <p>© 2026 Menk Harald Autoreparatur · Max-Hufschmidt-Str. 2 · 55130 Mainz</p>
+        <p>© 2026 Djawed Yussufi Reifenservice und Kfz-Aufbereitung</p>
         <nav aria-label="Rechtliche Links">
           <Link href="/impressum">Impressum</Link>
           <Link href="/datenschutz">Datenschutz</Link>
         </nav>
       </footer>
+
+      <div className="mobile-cta" aria-label="Schnellaktionen">
+        <a href={phoneHref}>Anrufen</a>
+        <a href={routeUrl}>Route</a>
+      </div>
     </>
   );
 }

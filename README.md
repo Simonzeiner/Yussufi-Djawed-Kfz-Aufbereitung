@@ -1,30 +1,32 @@
-# Menk Harald Autoreparatur Mainz
+# Djawed Yussufi Reifenservice und Kfz-Aufbereitung
 
-Premium website redesign for a local independent auto repair shop in Mainz.
+Premium-Neugestaltung für die Website von Djawed Yussufi Reifenservice und Kfz-Aufbereitung / Mainzer Autoteile Discount in Mainz.
 
-## Local development
+## Umfang
+
+- Moderne responsive One-Page-Website
+- Werkstattnahe Bildassets aus dem bestehenden Projektbestand
+- Impressum und Datenschutz mit sichtbaren Ergänzungspunkten
+- SEO-Metadaten und strukturierte Daten
+- Datensparsame Umsetzung ohne Tracking, externe Fonts oder eingebettete Karten
+
+## Entwicklung
 
 ```bash
-pnpm install
-pnpm dev
+npm run dev
 ```
 
-## Production checks
+## Prüfung
 
 ```bash
-pnpm build
-pnpm test
+npm test
 ```
 
-## Legal notes before launch
+## Vor Veröffentlichung ergänzen
 
-Replace every visible placeholder in contact, impressum and privacy pages with verified business data before public use:
-
-- Full legal business name and legal form
-- Postal address
-- Phone number
-- Email address
-- Opening hours
-- Responsible person
-- Tax/register details if required
-- Final privacy policy matched to the real hosting and contact workflow
+- Vollständige Rechtsform und vertretungsberechtigte Person
+- E-Mail-Adresse
+- Zuständige Handwerkskammer sowie Register- oder Rollennummer, falls erforderlich
+- Umsatzsteuer-ID, falls vorhanden und veröffentlichungspflichtig
+- Aussage zur Verbraucherstreitbeilegung
+- Finale Prüfung der Bildnutzungsrechte

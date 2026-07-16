@@ -22,39 +22,36 @@ async function render(path = "/") {
   );
 }
 
-test("renders the redesigned workshop homepage", async () => {
+test("renders the redesigned Yussufi homepage", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
   const html = await response.text();
-  assert.match(html, /Menk Harald Autoreparatur Mainz/);
-  assert.match(html, /Autoreparatur mit Ruhe, Praezision und klarer Ansage/);
-  assert.match(html, /Inspektion &amp; Wartung/);
-  assert.match(html, /Fehlerdiagnose/);
-  assert.match(html, /Max-Hufschmidt-Str\. 2/);
-  assert.match(html, /06131 8 56 97/);
-  assert.match(html, /07:30 - 17:30 Uhr/);
-  assert.match(html, /erfahrener und kompetenter Kfz-Meister/);
+  assert.match(html, /Djawed Yussufi Reifenservice und Kfz-Aufbereitung/);
+  assert.match(html, /Mainzer Autoteile Discount/);
+  assert.match(html, /Teilehandel/);
+  assert.match(html, /Fahrzeugaufbereitung/);
+  assert.match(html, /Weisenauer Weg 4-6/);
+  assert.match(html, /06131 5565234/);
+  assert.match(html, /09:00 - 18:00 Uhr/);
+  assert.match(html, /@mainzer.autoteile.discount/);
   assert.match(html, /application\/ld\+json/);
 });
 
-test("renders legal pages with visible placeholders", async () => {
+test("renders legal pages with company details", async () => {
   const [impressum, datenschutz] = await Promise.all([
     render("/impressum"),
     render("/datenschutz"),
   ]);
-
   assert.equal(impressum.status, 200);
   assert.equal(datenschutz.status, 200);
-
   const impressumHtml = await impressum.text();
   const datenschutzHtml = await datenschutz.text();
-
   assert.match(impressumHtml, /Impressum/);
-  assert.match(impressumHtml, /Max-Hufschmidt-Str\. 2/);
-  assert.match(impressumHtml, /E-Mail-Adresse ergaenzen/);
+  assert.match(impressumHtml, /Weisenauer Weg 4-6/);
+  assert.match(impressumHtml, /kontakt@mainzer-autoteile-discount.de/);
+  assert.match(impressumHtml, /DE326116193/);
   assert.match(datenschutzHtml, /Datenschutz/);
-  assert.match(datenschutzHtml, /06131 8 56 97/);
+  assert.match(datenschutzHtml, /06131 5565234/);
   assert.match(datenschutzHtml, /keine Analyse-Skripte/);
 });

@@ -2,16 +2,35 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://menk-harald-autoreparatur.f2hczvhjwm.chatgpt.site"),
+  metadataBase: new URL("https://www.mainzer-autoteile-discount.de"),
   title: {
-    default: "Menk Harald Autoreparatur Mainz",
-    template: "%s | Menk Harald Autoreparatur Mainz",
+    default: "Djawed Yussufi Reifenservice und Kfz-Aufbereitung Mainz",
+    template: "%s | Djawed Yussufi Mainz",
   },
   description:
-    "Freie Autoreparatur in Mainz: moderne Kfz-Werkstatt Website mit Leistungen, Kontakt, Impressum und Datenschutz.",
+    "Reifenservice, Autoteile, Felgen, Werkstatt, Fahrzeugaufbereitung und Smart Repair in Mainz.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Djawed Yussufi Reifenservice und Kfz-Aufbereitung Mainz",
+    description:
+      "Autoteile, Reifenservice, Felgen, Werkstatt und Fahrzeugaufbereitung am Weisenauer Weg 4-6 in Mainz.",
+    locale: "de_DE",
+    type: "website",
+    images: [
+      {
+        url: "/images/mainzer/hero-tire-service.jpg",
+        width: 1920,
+        height: 800,
+        alt: "Professioneller Reifenservice in einer Kfz-Werkstatt",
+      },
+    ],
+  },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/images/mainzer/favicon.png",
+    shortcut: "/images/mainzer/favicon.png",
+    apple: "/images/mainzer/favicon.png",
   },
   robots: {
     index: true,
@@ -23,7 +42,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   colorScheme: "light",
-  themeColor: "#171a1f",
+  themeColor: "#111317",
 };
 
 export default function RootLayout({
