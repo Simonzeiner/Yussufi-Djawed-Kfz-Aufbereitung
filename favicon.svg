@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Djawed Yussufi">
+  <rect width="64" height="64" rx="8" fill="#111316"/>
+  <path fill="#cf2029" d="M10 13h44v8H10zM10 43h44v8H10z"/>
+  <path fill="#fff" d="M15 26h8l5 8 5-8h8v18h-7V34l-5 7h-2l-5-7v10h-7V26Zm30 0h7v18h-7V26Z"/>
+</svg>
